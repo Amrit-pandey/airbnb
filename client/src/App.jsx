@@ -12,7 +12,7 @@ import SinglePlacePage from "./Pages/singlePlacePage";
 import BookingsPage from "./Pages/bookingsPage";
 import BookingPage from "./Pages/bookingPage";
 
-axios.defaults.baseURL = " http://127.0.0.1:4000";
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 axios.defaults.withCredentials = true;
 
 function App() {
